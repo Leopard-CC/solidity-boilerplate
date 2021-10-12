@@ -7,7 +7,7 @@ function n18(amount: string) {
 
 async function increaseTime(duration: number) {
   await ethers.provider.send("evm_increaseTime", [duration]);
-  await ethers.provider.send("evm_mine");
+  await ethers.provider.send("evm_mine", []);
 }
 
 module.exports = {
